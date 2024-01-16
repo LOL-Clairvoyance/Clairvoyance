@@ -4,7 +4,11 @@
 ## $Create Time: 06/01/2024 16:48
 ##=============================================================================//
 
-NAME = ClairvoyanceHooks.dll
+ifeq ($(OS),Windows_NT)
+	NAME = ClairvoyanceHooks.dll
+else
+	NAME = ClairvoyanceHooks.so
+endif
 
 SRC = src
 

@@ -4,7 +4,11 @@
 ## $Create Time: 06/01/2024 16:48
 ##=============================================================================//
 
-NAME = Clairvoyance.exe
+ifeq ($(OS),Windows_NT)
+	NAME = Clairvoyance.exe
+else
+	NAME = Clairvoyance
+endif
 
 SRC = src
 
